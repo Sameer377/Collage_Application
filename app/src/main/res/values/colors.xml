@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="fent_black">#C8000000</color>
+    <color name="para_txt">#555454</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="tab_indicator">#8DB5F3</color>
+    <color name="white_300">#B4FFFFFF</color>
+    <color name="white_700">#0F000000</color>
+    <color name="colorPrimary">#008577</color>
+    <color name="white_500">#F1EBEB</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="search_bg">#0F3CC9</color>
+    <color name="search_bar">#0A2986</color>
+    <color name="white_100">#F7F7F7</color>
+    <color name="ImgDis_txt">#6A6876</color>
+    <color name="warm_pink">#EAE8F6</color>
+
+
+    <!--
+    Figma Gallary colors
+    -->
+    <color name="_bg__android_small___1_ek2_color">#FFFFFF</color>
+    <color name="rectangle_1_color">#0A2986</color>
+    <color name="collage___infra_structure_color">#000000</color>
+
+
+<!--    Nav Header layout-->
+
+    <color name="header">#F3F2FF</color>
+    <color name="name_header">#000</color>
+    <color name="Description_header">#313131</color>
+    <color name="nav_color">#F3F2FF</color>
+
+
+    <!--    Initial page -->
+
+    <color name="login_text_field_outline">#021C68</color>
+    <color name="login_Button">#606EEE</color>
+    <color name="login_sign_up_txt">#021C68</color>
+    <color name="login_back_txt">#636363</color>
+    <color name="login_edt_txt_color">#1E1E1E</color>
+
+</resources>

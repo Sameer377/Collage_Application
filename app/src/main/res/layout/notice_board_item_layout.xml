@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/NoticeBoardTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="प्रवेशासाठीचे वेळापत्रक: अर्ज सादर करण्याचा अंतिम दिनांक वाढविणेबाबत शैक्षणिक वर्ष २०२०-२१ करीता प्रथम वर्ष पोस्ट एसएससी पदविका अभियांत्रिकी व तंत्रज्ञान अभ्यासक्रम (05-11-2020) New!"
+        android:layout_margin="@dimen/_10dp"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:gravity="center"
+        />
+
+
+</RelativeLayout>

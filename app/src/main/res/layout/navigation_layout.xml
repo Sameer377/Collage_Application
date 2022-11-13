@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:gravity="bottom"
+        android:id="@+id/navigation_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_176dp"
+        android:background="@color/header"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_marginStart="@dimen/_20dp"
+                android:layout_marginTop="@dimen/_40dp"
+                android:layout_marginEnd="@dimen/_20dp"
+                android:layout_marginBottom="@dimen/_20dp"
+                android:src="@drawable/ic_baseline_close_24" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/login_ui_img"
+                android:layout_width="@dimen/_150dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_20dp"
+                android:src="@drawable/login_nav_img" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/_30dp"
+                android:layout_toEndOf="@id/login_ui_img"
+                android:fontFamily="@font/nunito_extrabold"
+                android:gravity="left"
+                android:paddingStart="@dimen/_20dp"
+                android:text="Login"
+                android:textColor="#021C68"
+                android:textSize="@dimen/_22dp"
+                 />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20dp"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:layout_marginBottom="@dimen/_10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:src="@drawable/ic_baseline_close_24" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ProfileImg"
+                android:layout_width="@dimen/_60dp"
+                android:layout_height="@dimen/_60dp"
+                android:layout_marginTop="@dimen/_20dp"
+                android:background="@drawable/circle_profile_img"
+                android:padding="@dimen/_5dp"
+                android:src="@drawable/ic_baseline_person_24" />
+
+            <TextView
+                android:id="@+id/Name_Text_nav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ProfileImg"
+                android:layout_marginTop="@dimen/_10dp"
+                android:text="Mr. Sameer Bilal Shaikh"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/description_header_nav"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Name_Text_nav"
+                android:layout_marginTop="@dimen/_2dp"
+                android:maxWidth="@dimen/_200dp"
+                android:text="login for accessing more features"
+                android:textColor="@color/fent_black"
+                android:textSize="@dimen/_10dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/subItem_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200dp"
+        android:layout_above="@id/bottom_opt"
+        android:layout_below="@id/navigation_header">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_20dp"
+            android:paddingTop="@dimen/_10dp">
+
+            <TextView
+                style="@style/navigation_menu_text"
+                android:text="Principal's View" />
+
+            <TextView
+                style="@style/navigation_menu_text"
+                android:text="Management" />
+
+            <TextView
+                style="@style/navigation_menu_text"
+                android:text="Library" />
+
+            <TextView
+                style="@style/navigation_menu_text"
+                android:text="Training &amp; placement" />
+
+            <TextView
+                style="@style/navigation_menu_text"
+                android:text="Rules &amp; Regulations &amp; Committees" />
+
+            <TextView
+                style="@style/navigation_menu_text"
+                android:text="Result" />
+
+            <TextView
+                style="@style/navigation_menu_text"
+                android:text="Alumni" />
+
+            <TextView
+                style="@style/navigation_menu_text"
+                android:text="Almanac" />
+
+            <TextView
+                style="@style/navigation_menu_text"
+                android:text="Mandatory Disclosure" />
+
+            <TextView
+                style="@style/navigation_menu_text"
+                android:text="AICTE - EOA" />
+
+            <TextView
+                style="@style/navigation_menu_text"
+                android:text="Research &amp; Development" />
+
+            <TextView
+                style="@style/navigation_menu_text"
+                android:text="Shikshan Shulk Samiti" />
+
+            <TextView
+                style="@style/navigation_menu_text"
+                android:text="NBA" />
+
+            <TextView
+                style="@style/navigation_menu_text"
+                android:text="SITE MAP" />
+
+            <TextView
+                style="@style/navigation_menu_text"
+                android:text="Grievance Redressal Portal" />
+
+            <TextView
+                style="@style/navigation_menu_text"
+                android:layout_marginBottom="@dimen/_30dp"
+                android:text="Go to TECHNOLOGY"
+                android:textColor="@color/search_bar" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/bottom_opt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/header"
+        android:elevation="@dimen/_20dp"
+        android:paddingStart="@dimen/_20dp"
+        android:paddingEnd="@dimen/_20dp">
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:dividerColor="#757272"
+            app:dividerThickness="@dimen/_1dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_outline_fent_black"
+            android:paddingStart="@dimen/_20dp"
+            android:paddingTop="@dimen/_7dp"
+            android:paddingEnd="@dimen/_20dp"
+            android:paddingBottom="@dimen/_7dp"
+            android:text="Exit"
+            android:textColor="@color/search_bar"
+            android:textSize="@dimen/_13dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

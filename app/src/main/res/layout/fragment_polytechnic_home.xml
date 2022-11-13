@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/FragHomeScrollView"
+    android:scrollbars="none"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".polytechnic.Fragments.PolytechnicHome">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:paddingBottom="@dimen/_100dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            >
+
+            <TextView
+                android:textColor="@color/fent_black"
+                android:textStyle="bold"
+                android:id="@+id/iso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10dp"
+                android:text="An ISO 9001:2015 Certified Institute"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/p_logo"
+                android:layout_width="@dimen/_150dp"
+                android:layout_height="@dimen/_150dp"
+                android:layout_below="@id/iso"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_20dp"
+                android:src="@drawable/agppi_logo" />
+
+            <TextView
+                android:id="@+id/p_shanti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/p_logo"
+                android:layout_centerHorizontal="true"
+                android:text="Shanti Education Society's"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/p_clg_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/p_shanti"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/_20dp"
+                android:layout_marginEnd="@dimen/_20dp"
+                android:gravity="center"
+                android:text="A. G. Patil Polytechnic Institute, Solapur"
+                android:textColor="@color/search_bar"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/p_NBA"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/p_clg_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10dp"
+                android:text="NBA Accredited Programs"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/p_approved"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/p_NBA"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/_10dp"
+                android:layout_marginTop="@dimen/_5dp"
+                android:layout_marginEnd="@dimen/_10dp"
+                android:fontFamily="@font/teko"
+                android:gravity="center"
+                android:text="Approved by AICTE New Delhi,DTE Mumbai and Affiliated to MSBTE Mumbai"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/p_award"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/p_approved"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_5dp"
+                android:text="Awarded Excellent grade by MSBTE, Mumbai "
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+
+
+        <androidx.cardview.widget.CardView
+
+            app:cardCornerRadius="@dimen/_14dp"
+            android:layout_margin="@dimen/_20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/frag_home_img_slider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_170dp"
+                    app:iss_auto_cycle="true"
+                    app:iss_period="2500"
+                    app:iss_delay="2000"
+                    app:iss_corner_radius="40"
+                    android:scrollIndicators="bottom"
+                    app:iss_title_background="@drawable/gradient"
+                    app:iss_error_image="@drawable/error"
+                    app:iss_selected_dot="@drawable/selected_custom_indicator_img_slider"
+                    app:iss_unselected_dot="@drawable/unselected_custom_indicator_img_slider">
+
+                </com.denzcoskun.imageslider.ImageSlider>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <HorizontalScrollView
+
+            android:background="@color/white"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_180dp"
+                android:weightSum="5"
+                android:gravity="center"
+                android:orientation="horizontal"
+
+                >
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_weight="1"
+                    android:maxHeight="@dimen/_150dp"
+                    android:maxWidth="@dimen/_350dp"
+                    android:layout_margin="@dimen/_10dp"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/news_image_shape"
+                    android:baselineAligned="false"
+                    android:src="@drawable/real_time_news_img"
+                    app:shapeAppearanceOverlay="@style/RoundedCorners"
+                    app:strokeWidth="@dimen/_1dp"
+                    app:strokeColor="@color/fent_black"
+                    />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_weight="1"
+                    android:maxHeight="@dimen/_150dp"
+                    android:maxWidth="@dimen/_350dp"
+                    android:layout_margin="@dimen/_10dp"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/news_image_shape"
+                    android:baselineAligned="false"
+                    android:src="@drawable/home_img_best_principal"
+                    app:shapeAppearanceOverlay="@style/RoundedCorners"
+                    app:strokeWidth="@dimen/_1dp"
+                    app:strokeColor="@color/fent_black"
+                    />
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_weight="1"
+                    android:maxHeight="@dimen/_150dp"
+                    android:maxWidth="@dimen/_350dp"
+                    android:layout_margin="@dimen/_10dp"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/news_image_shape"
+                    android:baselineAligned="false"
+                    android:src="@drawable/real_time_news_img"
+                    app:shapeAppearanceOverlay="@style/RoundedCorners"
+                    app:strokeWidth="@dimen/_1dp"
+                    app:strokeColor="@color/fent_black"
+                    />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_weight="1"
+                    android:maxHeight="@dimen/_150dp"
+                    android:maxWidth="@dimen/_350dp"
+                    android:layout_margin="@dimen/_10dp"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/news_image_shape"
+                    android:baselineAligned="false"
+                    android:src="@drawable/home_img_best_principal"
+                    app:shapeAppearanceOverlay="@style/RoundedCorners"
+                    app:strokeWidth="@dimen/_1dp"
+                    app:strokeColor="@color/fent_black"
+                    />
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_weight="1"
+                    android:maxHeight="@dimen/_150dp"
+                    android:maxWidth="@dimen/_350dp"
+                    android:layout_margin="@dimen/_10dp"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/news_image_shape"
+                    android:baselineAligned="false"
+                    android:src="@drawable/real_time_news_img"
+                    app:shapeAppearanceOverlay="@style/RoundedCorners"
+                    app:strokeWidth="@dimen/_1dp"
+                    app:strokeColor="@color/fent_black"
+                    />
+
+
+
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            >
+
+            <TextView
+                android:textColor="@color/fent_black"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10dp"
+                android:text="An ISO 9001:2015 Certified Institute"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="@dimen/_150dp"
+                android:layout_height="@dimen/_150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_20dp"
+                android:src="@drawable/agppi_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Shanti Education Society's"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/_20dp"
+                android:layout_marginEnd="@dimen/_20dp"
+                android:gravity="center"
+                android:text="A. G. Patil Polytechnic Institute, Solapur"
+                android:textColor="@color/search_bar"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10dp"
+                android:text="NBA Accredited Programs"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/_10dp"
+                android:layout_marginTop="@dimen/_5dp"
+                android:layout_marginEnd="@dimen/_10dp"
+                android:fontFamily="@font/teko"
+                android:gravity="center"
+                android:text="Approved by AICTE New Delhi,DTE Mumbai and Affiliated to MSBTE Mumbai"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_5dp"
+                android:text="Awarded Excellent grade by MSBTE, Mumbai "
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

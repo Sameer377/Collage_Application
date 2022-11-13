@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/baloo</item>
+        <item>@font/basic</item>
+        <item>@font/cabin_sketch</item>
+        <item>@font/inter</item>
+        <item>@font/mandali</item>
+        <item>@font/nunito_extrabold</item>
+        <item>@font/nunito_sans_extrabold</item>
+        <item>@font/nunito_sans_extralight</item>
+        <item>@font/nunito_semibold</item>
+        <item>@font/palanquin_dark</item>
+        <item>@font/roboto_bold</item>
+        <item>@font/teko</item>
+    </array>
+</resources>

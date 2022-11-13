@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/_20dp"
+    android:background="@color/header"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_176dp">
+
+    <ImageView
+        android:layout_marginTop="@dimen/_30dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_close_24" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_10dp"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/_60dp"
+            android:layout_height="@dimen/_60dp"
+            android:background="@drawable/circle_profile_img"
+            android:padding="@dimen/_5dp"
+            android:src="@drawable/ic_baseline_person_24" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:text="Mr. Sameer Bilal Shaikh"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2dp"
+            android:text="sameershaikh01072004@gmai.com"
+            android:textColor="@color/fent_black"
+            android:textSize="@dimen/_10dp" />
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
+<!--    <com.google.android.material.divider.MaterialDivider
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:dividerThickness="@dimen/_1dp"
+        app:dividerColor="@color/search_bar"
+        android:layout_above="@+id/btn_polytechnic_nev_technology"
+        android:layout_marginBottom="@dimen/_10dp"/>-->
+
+

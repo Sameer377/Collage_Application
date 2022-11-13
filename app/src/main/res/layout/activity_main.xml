@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+    android:background="@drawable/sp_bg"
+       >
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="@dimen/_150dp"
+        android:layout_height="@dimen/_150dp"
+        android:src="@drawable/agppi_logo"
+        app:layout_constraintBottom_toTopOf="@+id/img2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+            android:padding="@dimen/_20dp"
+            android:id="@+id/img2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_150dp"
+            android:src="@drawable/agppi_text_logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="MissingConstraints" />
+
+
+        <LinearLayout
+            android:id="@+id/lin_clg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15dp"
+            android:visibility="gone"
+            android:weightSum="2"
+            app:layout_constraintBottom_toTopOf="@+id/img2">
+
+            <TextView
+                android:id="@+id/sp_btn_polytechnic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_5dp"
+                android:layout_weight="1"
+                android:background="@drawable/sp_btn_border"
+                android:gravity="center"
+                android:paddingTop="@dimen/_10dp"
+                android:paddingBottom="@dimen/_10dp"
+                android:text="Polytechnic\n( 0995 )"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sp_btn_technology"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_5dp"
+                android:layout_weight="1"
+                android:background="@drawable/sp_btn_border"
+                android:gravity="center"
+                android:text="Technology\n( 6308 )"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/Home"
+        android:title="Home"
+        android:icon="@drawable/ic_outline_home_blue"/>
+
+    <item android:id="@+id/PhotoGallary"
+        android:title="Gallery"
+        android:icon="@drawable/ic_outline_photo_library_blue"/>
+ <item android:id="@+id/NewsLetter"
+        android:title="News"
+        android:icon="@drawable/ic_outline_news_blue"/>
+ <item android:id="@+id/Downloads"
+        android:title="Downloads"
+        android:icon="@drawable/ic_outline_file_download_blue"/>
+
+ <item android:id="@+id/Sports"
+        android:title="Sports"
+        android:icon="@drawable/ic_baseline_sports_blue"/>
+
+</menu>

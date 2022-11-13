@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_400dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_10dp"
+        app:cardBackgroundColor="#fff"
+        app:cardCornerRadius="@dimen/_10dp"
+        app:cardElevation="@dimen/_7dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:minWidth="@dimen/_300dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_10dp">
+
+            <TextView
+                android:id="@+id/Upload_book_txt"
+                style="@style/CardView_Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload Book" />
+
+            <RelativeLayout
+                android:id="@+id/rel_selected_book_img"
+                android:layout_width="@dimen/_110dp"
+                android:layout_height="@dimen/_145dp"
+                android:layout_below="@id/Upload_book_txt"
+                android:layout_marginTop="@dimen/_10dp"
+                android:background="@drawable/upload_book_background"
+                android:elevation="-10dp">
+
+                <RelativeLayout
+                    android:id="@+id/upload_pict"
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/upload_book_img_icon" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/btn_upload_book_txt"
+                style="@style/Button_outlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Upload_book_txt"
+                android:layout_marginStart="@dimen/_10dp"
+                android:layout_marginTop="@dimen/_12dp"
+                android:layout_toEndOf="@+id/rel_selected_book_img"
+                android:background="@drawable/outline_button_fent_black"
+                android:text="Upload PDF" />
+
+            <TextView
+                android:id="@+id/selectYr_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_upload_book_txt"
+                android:layout_marginStart="@dimen/_10dp"
+                android:layout_marginTop="@dimen/_5dp"
+                android:layout_marginBottom="@dimen/_5dp"
+                android:layout_toEndOf="@+id/rel_selected_book_img"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="Select Year :"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_8dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_below="@id/selectYr_txt"
+                android:weightSum="5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40dp"
+                android:layout_marginStart="@dimen/_10dp"
+                android:layout_marginTop="0dp"
+                android:layout_toEndOf="@+id/rel_selected_book_img"
+                android:orientation="horizontal">
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:layout_weight="1"
+                    android:elevation="-20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/outline_button_fent_black"
+                    android:button="@drawable/upload_book_background"
+                    />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/outline_button_fent_black"
+                    android:button="@drawable/upload_book_background"
+                    android:layout_marginStart="@dimen/_5dp"
+                    />
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/outline_button_fent_black"
+                    android:button="@drawable/upload_book_background"
+                    android:layout_marginStart="@dimen/_5dp"
+                    />
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/outline_button_fent_black"
+                    android:button="@drawable/upload_book_background"
+                    android:layout_marginStart="@dimen/_5dp"
+                    />
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/outline_button_fent_black"
+                    android:button="@drawable/upload_book_background"
+                    android:layout_marginStart="@dimen/_5dp"
+                    />
+            </RadioGroup>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
