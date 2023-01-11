@@ -8,8 +8,11 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.KeyEvent;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.RotateAnimation;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -20,6 +23,7 @@ import com.college.app.polytechnic.Polytechnic;
 public class Login extends AppCompatActivity {
     private TextView Login_btn,login_description,forgotpass,signup,newuser,back,btn_skip_login;
     private RelativeLayout Username,Password,progress_circular;
+    private ImageView small_g,big_g;
     private LinearLayout lin_otp;
     private  String flag="login";
     private EditText[] editTexts;
@@ -69,6 +73,26 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                RotateAnimation rotate = new RotateAnimation(
+                        0, 270,
+                        Animation.RELATIVE_TO_SELF, 0.5f,
+                        Animation.RELATIVE_TO_SELF, 0.5f
+                );
+
+                rotate.setDuration(2900);
+                rotate.setRepeatCount(10);
+                big_g.startAnimation(rotate);
+                  RotateAnimation rotate1 = new RotateAnimation(
+                        360, 0,
+                        Animation.RELATIVE_TO_SELF, 0.5f,
+                        Animation.RELATIVE_TO_SELF, 0.5f
+                );
+
+                rotate1.setDuration(2900);
+                rotate1.setRepeatCount(10);
+
+                small_g.startAnimation(rotate1);
+
                 if(Login_btn.getText().toString().trim().equals("Login")){
                     flag="otp";
                     displayOtp(true);
@@ -111,6 +135,8 @@ public class Login extends AppCompatActivity {
     }
 
     private void initui() {
+        small_g=findViewById(R.id.small_gear_wheel);
+        big_g=findViewById(R.id.big_gear_wheel);
         back=findViewById(R.id.btn_back_login);
         newuser=findViewById(R.id.txt_new_user);
         signup=findViewById(R.id.login_signup_txt);

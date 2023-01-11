@@ -3,6 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Desktop/Collage_Application/College/app/src/main/res/drawable/favorite-24px.xml" value="0.2155" />
+        <entry key="..\:/Desktop/Collage_Application/College/app/src/main/res/drawable/outline_button_fent_black.xml" value="0.201" />
+        <entry key="..\:/Desktop/Collage_Application/College/app/src/main/res/drawable/upload_book_background.xml" value="0.201" />
+        <entry key="..\:/Desktop/Collage_Application/College/app/src/main/res/drawable/view_more_card_btn.xml" value="0.167" />
+        <entry key="..\:/Desktop/Collage_Application/College/app/src/main/res/layout/about_demo.xml" value="0.14" />
+        <entry key="..\:/Desktop/Collage_Application/College/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Desktop/Collage_Application/College/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Desktop/Collage_Application/College/app/src/main/res/layout/demo_splash_logo.xml" value="0.18" />
+        <entry key="..\:/Desktop/Collage_Application/College/app/src/main/res/layout/fragment_polytechnic_about.xml" value="0.25" />
         <entry key="..\:/Desktop/College/app/src/main/res/drawable/bottom_nav_sheet_bg.xml" value="0.2155" />
         <entry key="..\:/Desktop/College/app/src/main/res/drawable/button_outline_darkblue.xml" value="0.1055" />
         <entry key="..\:/Desktop/College/app/src/main/res/drawable/button_outline_fent_black.xml" value="0.1055" />

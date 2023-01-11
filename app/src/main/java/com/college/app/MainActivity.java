@@ -11,16 +11,19 @@ import android.view.View;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
+import android.view.animation.RotateAnimation;
 import android.view.animation.TranslateAnimation;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.college.app.polytechnic.Polytechnic;
 import com.college.app.polytechnic.initials.Login;
 
 public class MainActivity extends AppCompatActivity {
-    private ImageView img1,img2;
+    private ImageView img2,gear_logo;
+    private RelativeLayout main_logo;
     private final int SPLASH_DISPLAY_LENGTH = 1000;
     private LinearLayout lin_clg;
     private TextView polytechnic,technology;
@@ -38,20 +41,30 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initUI();
-        fadeOutAndHideImage(img1,img2);
+        fadeOutAndHideImage(main_logo,img2);
 
     }
 
     private void initUI() {
         polytechnic=findViewById(R.id.sp_btn_polytechnic);
         technology=findViewById(R.id.sp_btn_technology);
-        img1=findViewById(R.id.img1);
+        main_logo=findViewById(R.id.rel_logo_main_splash);
         img2=findViewById(R.id.img2);
+        gear_logo=findViewById(R.id.gear_wheel_logo);
         lin_clg=findViewById(R.id.lin_clg);
+        RotateAnimation rotate = new RotateAnimation(
+                0, 270,
+                Animation.RELATIVE_TO_SELF, 0.5f,
+                Animation.RELATIVE_TO_SELF, 0.5f
+        );
+
+        rotate.setDuration(2900);
+
+        gear_logo.startAnimation(rotate);
     }
 
 
-    private void fadeOutAndHideImage(final ImageView img,ImageView Img1)
+    private void fadeOutAndHideImage(final RelativeLayout img,final ImageView main_logo)
     {
         // Fade Animation code
         Animation fadeOut = new AlphaAnimation(0,1);
@@ -116,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         img.startAnimation(fadeOut);
-        Img1.startAnimation(fadeOut);
+        main_logo.startAnimation(fadeOut);
 
     }
 

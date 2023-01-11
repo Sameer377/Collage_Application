@@ -4,8 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/sp_bg"
+
     tools:context=".polytechnic.initials.Login">
+    <RelativeLayout
+        android:layout_width="@dimen/_400dp"
+        android:layout_height="@dimen/_400dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/big_gear_wheel"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="-57dp"
+            android:layout_marginBottom="-57dp"
+            android:src="@drawable/big_gear_final" />
+
+        <ImageView
+            android:id="@+id/small_gear_wheel"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_above="@id/big_gear_wheel"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="-55dp"
+            android:layout_marginBottom="-40dp"
+            android:src="@drawable/small_gear_wheel_final" />
+
+    </RelativeLayout>
     <RelativeLayout
         android:visibility="gone"
         android:id="@+id/progress_circular"

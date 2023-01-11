@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rel_logo_main_splash"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/bird_logo"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/agppi_logo_withoutgear" />
+
+        <ImageView
+            android:id="@+id/gear_wheel_logo"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="46dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/gear_wheel_original" />
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/_400dp"
+            android:layout_height="@dimen/_400dp"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:id="@+id/img_big_gear"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="-57dp"
+                android:layout_marginBottom="-57dp"
+                android:src="@drawable/big_gear_final" />
+
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_above="@id/img_big_gear"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="-55dp"
+                android:layout_marginBottom="-40dp"
+                android:src="@drawable/small_gear_wheel_final" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>
