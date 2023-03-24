@@ -6,16 +6,24 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_400dp">
+
+        </RelativeLayout>
+
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/_15dp"
-            app:cardElevation="@dimen/_2dp"
-            app:cardMaxElevation="5dp"
+            android:baselineAligned="false"
             app:cardCornerRadius="@dimen/_15dp"
-            >
+            app:cardElevation="@dimen/_2dp"
+            app:cardMaxElevation="5dp">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -92,223 +100,221 @@
 
 
         <androidx.cardview.widget.CardView
-            android:layout_marginTop="@dimen/_5dp"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_400dp" android:layout_margin="@dimen/_15dp"
-            app:cardElevation="@dimen/_2dp"
+            android:layout_height="@dimen/_400dp"
+            android:layout_margin="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_5dp"
             app:cardCornerRadius="@dimen/_15dp"
-            >
+            app:cardElevation="@dimen/_2dp">
 
             <LinearLayout
-                android:padding="@dimen/_15dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                >
+                android:padding="@dimen/_15dp">
+
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
-                    app:cardCornerRadius="@dimen/_8dp"
-                    android:layout_height="wrap_content">
-                    <com.denzcoskun.imageslider.ImageSlider app:iss_auto_cycle="true"
-            app:iss_period="2500"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="@dimen/_8dp">
 
-            app:iss_delay="2000"
+                    <com.denzcoskun.imageslider.ImageSlider
                         android:id="@+id/vision_img_slider"
                         android:layout_width="match_parent"
+
                         android:layout_height="@dimen/_170dp"
-                        />
+                        app:iss_auto_cycle="true"
+                        app:iss_delay="2000"
+                        app:iss_period="2500" />
                 </androidx.cardview.widget.CardView>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:fontFamily="@font/nunito_extrabold"
+
                     android:text="About Institute"
                     android:textColor="#00134B"
-
-                    android:fontFamily="@font/nunito_extrabold"
-                    android:textSize="@dimen/_18dp"
-                    android:layout_marginTop="@dimen/_10dp"
-                    />
+                    android:textSize="@dimen/_18dp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Shanti Education Society’s A. G. Patil Polytechnic Institute,established in 2008, started evolutionary ideas and sample innovativeness to provide a word class education in the field of Engineering and Technology in Solapur region. The institute"
-                    android:textColor="#000"
                     android:layout_marginTop="@dimen/_10dp"
-                    android:textSize="@dimen/_13dp"
                     android:fontFamily="@font/nunito_semibold"
                     android:justificationMode="inter_word"
-                    />
+                    android:text="Shanti Education Society’s A. G. Patil Polytechnic Institute,established in 2008, started evolutionary ideas and sample innovativeness to provide a word class education in the field of Engineering and Technology in Solapur region. The institute"
+                    android:textColor="#000"
+                    android:textSize="@dimen/_13dp" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <TextView
-                        android:layout_alignParentRight="true"
                         android:layout_width="wrap_content"
                         android:layout_height="@dimen/_30dp"
+                        android:layout_alignParentRight="true"
                         android:layout_marginTop="@dimen/_10dp"
                         android:background="@drawable/view_more_card_btn"
-                        android:text="View More"
+                        android:fontFamily="@font/nunito_extrabold"
                         android:gravity="center"
-                        android:textColor="@color/search_bg"
                         android:paddingStart="@dimen/_15dp"
                         android:paddingEnd="@dimen/_15dp"
+                        android:text="View More"
 
-                        android:fontFamily="@font/nunito_extrabold"
-                        android:textSize="@dimen/_13dp"/>
+                        android:textColor="@color/search_bg"
+                        android:textSize="@dimen/_13dp" />
                 </RelativeLayout>
 
 
             </LinearLayout>
 
 
-
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_marginTop="@dimen/_15dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:layout_margin="@dimen/_15dp"
-            app:cardElevation="@dimen/_2dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_15dp"
             app:cardCornerRadius="@dimen/_15dp"
-            >
+            app:cardElevation="@dimen/_2dp">
 
             <LinearLayout
-                android:padding="@dimen/_15dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                >
+                android:padding="@dimen/_15dp">
+
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
-                    app:cardCornerRadius="@dimen/_8dp"
-                    android:layout_height="wrap_content">
-                    <com.denzcoskun.imageslider.ImageSlider app:iss_auto_cycle="true"
-            app:iss_period="2500"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="@dimen/_8dp">
 
-            app:iss_delay="2000"
+                    <com.denzcoskun.imageslider.ImageSlider
                         android:id="@+id/campus_slider"
                         android:layout_width="match_parent"
+
                         android:layout_height="@dimen/_170dp"
-                        />
+                        app:iss_auto_cycle="true"
+                        app:iss_delay="2000"
+                        app:iss_period="2500" />
                 </androidx.cardview.widget.CardView>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:fontFamily="@font/nunito_extrabold"
                     android:text="Highlights"
                     android:textColor="#00134B"
-                    android:fontFamily="@font/nunito_extrabold"
-                    android:textSize="@dimen/_18dp"
-                    android:layout_marginTop="@dimen/_10dp"
-                    />
+                    android:textSize="@dimen/_18dp" />
 
                 <TextView
                     android:id="@+id/campus_cv_txt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Shanti Education Society’s A. G. Patil Polytechnic Institute,established in 2008, started evolutionary ideas and sample innovativeness to provide a word class education in the field of Engineering and Technology in Solapur region. The institute"
-                    android:textColor="#000"
                     android:layout_marginTop="@dimen/_10dp"
-                    android:textSize="@dimen/_13dp"
                     android:fontFamily="@font/nunito_semibold"
                     android:justificationMode="inter_word"
-                    />
+                    android:text="Shanti Education Society’s A. G. Patil Polytechnic Institute,established in 2008, started evolutionary ideas and sample innovativeness to provide a word class education in the field of Engineering and Technology in Solapur region. The institute"
+                    android:textColor="#000"
+                    android:textSize="@dimen/_13dp" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <TextView
-                        android:layout_alignParentRight="true"
                         android:layout_width="wrap_content"
                         android:layout_height="@dimen/_30dp"
+                        android:layout_alignParentRight="true"
                         android:layout_marginTop="@dimen/_10dp"
                         android:background="@drawable/view_more_card_btn"
-                        android:text="View More"
+                        android:fontFamily="@font/nunito_extrabold"
                         android:gravity="center"
-                        android:textColor="@color/search_bg"
                         android:paddingStart="@dimen/_15dp"
                         android:paddingEnd="@dimen/_15dp"
+                        android:text="View More"
 
-                        android:fontFamily="@font/nunito_extrabold"
-                        android:textSize="@dimen/_13dp"/>
+                        android:textColor="@color/search_bg"
+                        android:textSize="@dimen/_13dp" />
                 </RelativeLayout>
 
             </LinearLayout>
 
 
-
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_marginBottom="@dimen/_120dp"
-            android:layout_marginTop="@dimen/_5dp"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_400dp" android:layout_margin="@dimen/_15dp"
-            app:cardElevation="@dimen/_2dp"
+            android:layout_height="@dimen/_400dp"
+            android:layout_margin="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_5dp"
+            android:layout_marginBottom="@dimen/_120dp"
             app:cardCornerRadius="@dimen/_15dp"
-            >
+            app:cardElevation="@dimen/_2dp">
 
             <LinearLayout
-                android:padding="@dimen/_15dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                >
+                android:padding="@dimen/_15dp">
+
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
-                    app:cardCornerRadius="@dimen/_8dp"
-                    android:layout_height="wrap_content">
-                    <com.denzcoskun.imageslider.ImageSlider app:iss_auto_cycle="true"
-            app:iss_period="2500"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="@dimen/_8dp">
 
-            app:iss_delay="2000"
+                    <com.denzcoskun.imageslider.ImageSlider
                         android:id="@+id/mission_img_slider"
                         android:layout_width="match_parent"
+
                         android:layout_height="@dimen/_170dp"
-                        />
+                        app:iss_auto_cycle="true"
+                        app:iss_delay="2000"
+                        app:iss_period="2500" />
                 </androidx.cardview.widget.CardView>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:fontFamily="@font/nunito_extrabold"
                     android:text="About Institute"
                     android:textColor="#00134B"
-                    android:fontFamily="@font/nunito_extrabold"
-                    android:textSize="@dimen/_18dp"
-                    android:layout_marginTop="@dimen/_10dp"
-                    />
+                    android:textSize="@dimen/_18dp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Shanti Education Society’s A. G. Patil Polytechnic Institute,established in 2008, started evolutionary ideas and sample innovativeness to provide a word class education in the field of Engineering and Technology in Solapur region. The institute"
-                    android:textColor="#000"
                     android:layout_marginTop="@dimen/_10dp"
-                    android:textSize="@dimen/_13dp"
                     android:fontFamily="@font/nunito_semibold"
                     android:justificationMode="inter_word"
-                    />
+                    android:text="Shanti Education Society’s A. G. Patil Polytechnic Institute,established in 2008, started evolutionary ideas and sample innovativeness to provide a word class education in the field of Engineering and Technology in Solapur region. The institute"
+                    android:textColor="#000"
+                    android:textSize="@dimen/_13dp" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <TextView
-                        android:layout_alignParentRight="true"
                         android:layout_width="wrap_content"
                         android:layout_height="@dimen/_30dp"
+                        android:layout_alignParentRight="true"
                         android:layout_marginTop="@dimen/_10dp"
                         android:background="@drawable/view_more_card_btn"
-                        android:text="View More"
+                        android:fontFamily="@font/nunito_extrabold"
                         android:gravity="center"
-                        android:textColor="@color/search_bg"
                         android:paddingStart="@dimen/_15dp"
                         android:paddingEnd="@dimen/_15dp"
+                        android:text="View More"
 
-                        android:fontFamily="@font/nunito_extrabold"
-                        android:textSize="@dimen/_13dp"/>
+                        android:textColor="@color/search_bg"
+                        android:textSize="@dimen/_13dp" />
                 </RelativeLayout>
             </LinearLayout>
         </androidx.cardview.widget.CardView>

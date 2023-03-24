@@ -16,9 +16,6 @@
         android:theme="@style/Theme.College"
         tools:targetApi="31">
         <activity
-            android:name=".Hello"
-            android:exported="false" />
-        <activity
             android:name=".polytechnic.initials.SignupActivity"
             android:exported="false"
             android:theme="@style/AppTheme.NoActionbar.white" />
