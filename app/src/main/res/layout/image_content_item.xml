@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/about_img_slider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_170dp"
+        app:iss_auto_cycle="true"
+        app:iss_delay="2000"
+        app:iss_period="2500" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:fontFamily="@font/nunito_semibold"
+        android:justificationMode="inter_word"
+        android:maxHeight="@dimen/_300dp"
+        android:textColor="@color/fent_black"
+        android:textStyle="bold"
+        android:text="Shanti Education Society’s A. G. Patil Polytechnic Institute,established in 2008, started evolutionary ideas and sample innovativeness to provide a word class education in the field of Engineering and Technology in Solapur region. The institute"
+        android:textSize="@dimen/_13dp" />
+
+</LinearLayout>
